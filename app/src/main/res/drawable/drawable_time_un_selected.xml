@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+
+        <shape android:shape="rectangle" >
+
+            <solid android:color="@color/white"/>
+
+            <stroke
+                android:color="@color/bgLightGrey"
+                android:dashWidth="7px"
+                android:dashGap="3px"
+                android:width="1dp"/>
+            <corners android:radius="9.5dp"/>
+
+
+
+
+        </shape>
+
+
+
+    </item>
+
+
+    <item android:drawable="@drawable/time_un">
+
+        <shape android:shape="rectangle"/>
+
+
+
+    </item>
+
+</layer-list>

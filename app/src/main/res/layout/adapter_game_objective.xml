@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainCl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivmainContainer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/ivmainContainer"
+            app:layout_constraintEnd_toEndOf="@id/ivmainContainer"
+            app:layout_constraintStart_toStartOf="@id/ivmainContainer"
+            app:layout_constraintTop_toTopOf="@+id/ivmainContainer" />
+
+        <ProgressBar
+            android:id="@+id/progresBar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivmainContainer"
+            app:layout_constraintEnd_toEndOf="@+id/ivmainContainer"
+            app:layout_constraintStart_toStartOf="@+id/ivmainContainer"
+            app:layout_constraintTop_toTopOf="@+id/ivmainContainer" />
+
+
+        <TextView
+            android:id="@+id/tvobjective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="abbb"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivmainContainer"
+            app:layout_constraintStart_toStartOf="@+id/ivmainContainer"
+            app:layout_constraintTop_toBottomOf="@+id/ivmainContainer" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

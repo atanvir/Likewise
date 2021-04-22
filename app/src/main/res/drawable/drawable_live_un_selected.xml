@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/white"/>
+           
+
+            <stroke
+                android:color="@color/bgLightGrey"
+                android:dashWidth="7px"
+                android:dashGap="3px"
+                android:width="2px"/>
+            <corners android:radius="6dp"/>
+            <size android:width="40dp" android:height="40dp"/>
+            <padding android:right="15dp" android:left="15dp" android:bottom="15dp" android:top="15dp"/>
+        </shape>
+
+
+
+    </item>
+
+
+    <item android:drawable="@drawable/life_un">
+
+        <shape android:shape="rectangle"/>
+
+
+
+    </item>
+
+</layer-list>

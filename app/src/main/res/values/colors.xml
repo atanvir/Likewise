@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#6B388E</color>
+    <color name="colorAccent">#B5B50015</color>
+    <color name="lightPurple">#9A64BE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#ACABAE</color>
+    <color name="grey2">#6E6E6E</color>
+    <color name="darkGrey">#585760</color>
+    <color name="black">#000000</color>
+    <color name="fbBlue">#666ABD</color>
+    <color name="yellow">#D0912B</color>
+    <color name="lightBlack">#25232F</color>
+    <color name="lightPink">#EBE1F1</color>
+    <color name="darkPurple">#9E57BE</color>
+    <color name="bgLightGrey">#A7A7AB</color>
+    <color name="bgRed">#CEDD252D</color>
+    <color name="bgLightRed">#FDEAEA</color>
+    <color name="blurPurple">#CB6B388E</color>
+    <color name="green">#28CD2E</color>
+    <color name="sky_blue">#00D9F0</color>
+    <color name="light_green">#3FF000</color>
+    <color name="chat_black">#BF000000</color>
+    <color name="chat_purple">#BF6B388E</color>
+    <color name="black_transparent">#CB000000</color>
+
+</resources>

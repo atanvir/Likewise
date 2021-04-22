@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "112914264819",
+    "firebase_url": "https://likewise-d6d10.firebaseio.com",
+    "project_id": "likewise",
+    "storage_bucket": "likewise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112914264819:android:b424138bc51ff0a93f7d86",
+        "android_client_info": {
+          "package_name": "com.likewise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112914264819-4n6bmjqe8hduu78l1ndfuk68ai8c02f6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.likewise",
+            "certificate_hash": "08561f48d48529013d401677ccd19c50d668e1b9"
+          }
+        },
+        {
+          "client_id": "112914264819-ajdo6ulr08bokbfeqjmiktlcv6fcd841.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE2fn2gi3umla64AzvTkj2QfIIA35lL1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112914264819-ajdo6ulr08bokbfeqjmiktlcv6fcd841.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

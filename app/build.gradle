@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.likewise"
+        multiDexEnabled true
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 31
+        versionName "3.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0@aar'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation "com.google.android.material:material:1.1.0"
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Dragabble View
+    implementation 'com.jmedeisis:draglinearlayout:1.1.0'
+
+    //Recycleview Animation
+    implementation "com.mlsdev.animatedrv:library:2.0.0"
+
+    //country code picker
+    implementation 'com.hbb20:ccp:1.8.1'
+
+    //View Pager Animation
+    implementation 'com.github.crosswall:Android-Coverflow:release-v1.0.5'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-login:5.8.0'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.3'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Image
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    //Bounce View
+    implementation 'hari.bounceview:bounceview:0.1.0'
+
+    //Animation
+    implementation 'com.willowtreeapps.spruce:spruce-android:1.0.1'
+    implementation 'com.github.hyuwah:DraggableView:0.4.1'
+
+    //progress view custom
+    implementation 'com.white:progressview:1.0.1'
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+
+    //Google Ads
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
+
+    //App Purchase
+    implementation 'com.android.billingclient:billing:3.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //
+    implementation 'com.github.channguyen:adv:1.0.0'
+
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+
+
+    //Socket
+    implementation('io.socket:socket.io-client:0.6.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+
+}

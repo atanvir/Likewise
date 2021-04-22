@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <EditText
+        android:id="@+id/fullNameEd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:paddingRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/drawable_white_corners"
+        android:drawableLeft="@drawable/drawable_selector_user"
+        android:drawablePadding="17dp"
+        android:textSize="15dp"
+        android:inputType="text"
+        android:elevation="2dp"
+        android:digits="@string/full_name_validation"
+        android:maxLength="40"
+        android:hint="@string/full_name"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_selector_feild"
+        android:textColorHint="@color/hint_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/emailEd"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/drawable_white_corners"
+        android:drawableLeft="@drawable/drawable_selector_mail"
+        android:drawablePadding="14dp"
+        android:hint="@string/email"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:elevation="2dp"
+        android:inputType="text"
+        android:paddingRight="16dp"
+        android:maxLength="50"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_selector_feild"
+        android:textColorHint="@color/hint_selector"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameEd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fullNameEd"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameEd" />
+
+
+    <EditText
+        android:id="@+id/userNameEd"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/drawable_white_corners"
+        android:drawableLeft="@drawable/drawable_selector_user"
+        android:drawablePadding="17dp"
+        android:hint="@string/user_name"
+        android:elevation="2dp"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:paddingRight="16dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_selector_feild"
+        android:textColorHint="@color/hint_selector"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailEd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailEd"
+        app:layout_constraintTop_toBottomOf="@+id/emailEd" />
+
+    <EditText
+        android:id="@+id/passEd"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/drawable_white_corners"
+        android:drawableLeft="@drawable/drawable_selector_password"
+        android:drawablePadding="17dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:elevation="2dp"
+        android:maxLength="20"
+        android:imeOptions="actionDone"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/text_selector_feild"
+        android:textColorHint="@color/hint_selector"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userNameEd"
+        app:layout_constraintStart_toStartOf="@+id/userNameEd"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:elevation="5dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/eye_un"
+        app:layout_constraintBottom_toBottomOf="@+id/passEd"
+        app:layout_constraintEnd_toEndOf="@+id/passEd"
+        app:layout_constraintTop_toTopOf="@+id/passEd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
